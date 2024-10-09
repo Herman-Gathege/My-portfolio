@@ -1,0 +1,70 @@
+/* src/components/Navbar.css */
+
+nav {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Center items vertically */
+  padding: 1rem 2rem; /* Add some padding */
+  background-color: #007BFF; /* Background color of the navbar */
+  color: #fff; /* Text color */
+  position: fixed; /* Fix the navbar at the top */
+  width: 100%; /* Full width */
+  top: 0; /* Align to the top */
+  z-index: 1000; /* Stay above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+  overflow: hidden; /* Prevent overflow */
+}
+
+h1 {
+  font-size: 1.5rem; /* Font size for the title */
+  font-weight: bold; /* Bold title */
+  margin: 0; /* Remove default margin */
+}
+
+ul {
+  list-style-type: none; /* Remove bullet points */
+  display: flex; /* Align links in a row */
+  gap: 1.5rem; /* Space between links */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  margin-right: 100px;
+}
+
+li {
+  display: inline; /* Ensure list items are inline */
+}
+
+a {
+  color: #fff; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem; /* Font size for links */
+  transition: color 0.3s ease; /* Smooth color change */
+}
+
+a:hover {
+  color: #f1f1f1; /* Lighten link color on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  ul {
+    display: none; /* Hide links on small screens */
+    width: 100%; /* Ensure the ul takes full width */
+    flex-direction: column; /* Stack links vertically */
+    background-color: #007BFF; /* Background color */
+  }
+
+  nav:hover ul {
+    display: flex; /* Show links when hovering over the navbar */
+  }
+
+  li {
+    padding: 0.5rem 1rem; /* Add padding to links */
+    width: 100%; /* Full width for each link item */
+  }
+}

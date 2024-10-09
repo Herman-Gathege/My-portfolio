@@ -1,0 +1,33 @@
+.projects {
+  padding: 4rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: #f1f1f1;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #007BFF;
+  margin-right: 10px;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
